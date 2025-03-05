@@ -21,19 +21,19 @@ spec:
         #     memory: "128Mi"
         #     cpu: "500m"
         ports:
-        - containerPort: 82
+        - containerPort: 3451
         env:
           - name: "HTTP_PORT"
-            value: "82"
+            value: "3451"
 
-      - name: cache-nginx
-        image: nginx:1.14.2
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
-        ports:
-        - containerPort: 80
-        env:
-          - name: "HTTP_PORT"
-            value: "80"
+      # - name: cache-nginx
+      #   image: nginx:1.14.2
+      #   # resources:
+      #   #   limits:
+      #   #     memory: "128Mi"
+      #   #     cpu: "500m"
+      #   ports:
+      #   - containerPort: 80
+      #   env:
+      #     - name: "HTTP_PORT"
+      #       value: "80"
